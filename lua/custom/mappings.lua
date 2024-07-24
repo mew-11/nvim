@@ -12,6 +12,12 @@ M.dap = {
       "Run or continue the debugger"
     }
   },
+  i = {
+    ["<leader>fn"] = {
+      "<cmd>Nerdy<CR>",
+      "Search glyphs icon "
+    }
+  }
 }
 --ok
 

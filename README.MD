@@ -12,5 +12,6 @@ $ git clone https://github.com/xiaowu-d3/nvim.git ~/.config/nvim
 ```
 $ nvim
 ```
+## icons => 󰣇 
 
 By following these steps, you will have Nvchad configured in your Neovim environment.

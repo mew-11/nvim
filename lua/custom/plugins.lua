@@ -32,6 +32,18 @@ local plugins = {
   --     return require "custom.configs.null-ls"
   --   end,
   -- },
+
+  --nerd glyph
+  -- Lazy
+  {
+    '2kabhishek/nerdy.nvim',
+    dependencies = {
+        'stevearc/dressing.nvim',
+        'nvim-telescope/telescope.nvim',
+    },
+    cmd = 'Nerdy',
+  },
+
   {
     "smoka7/multicursors.nvim",
     event = "VeryLazy",
