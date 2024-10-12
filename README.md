@@ -19,7 +19,7 @@ git clone https://github.com/xiaowu-d3/nvim.git ~/.config/nvim && nvim
 
 You can use script
 ```bash
-git clone https://github.com/xiaowu-d3/nvim.gi
+git clone https://github.com/xiaowu-d3/nvim.git
 cd nvim
 chmod +x install.sh
 ```
@@ -30,5 +30,7 @@ chmod +x install.sh
 ## Basic commands
 - :w -> save file
 - :q -> quit neovim
-- :MasonInstall <name> -> all name => :Mason
+- :MasonInstall `name_mason` -> all name => :Mason
+  eg: MasonInstall clangd
+- ctrl + h,j,k,l => move right, down, up, left
 
