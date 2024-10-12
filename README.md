@@ -16,6 +16,14 @@ sudo pacman -S neovim
 # on linux
 git clone https://github.com/xiaowu-d3/nvim.git ~/.config/nvim && nvim
 ```
+
+You can use script
+```bash
+git clone https://github.com/xiaowu-d3/nvim.gi
+cd nvim
+chmod +x install.sh
+```
+
 ## Basic mappings
 - space + ee: open neotree
 - space + ff: search file
