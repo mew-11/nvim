@@ -32,3 +32,6 @@ map("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- c
 map("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 map("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+map("n", "<A-h>", "<cmd>ToggleTerm direction=horizontal<CR>", { desc = "Open terminal horizontal" }) --  move current buffer to new tab
+map("n", "<A-v>", "<cmd>ToggleTerm direction=vertical size=49<CR>", { desc = "Open terminal vertical" }) --  move current buffer to new tab
+map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })

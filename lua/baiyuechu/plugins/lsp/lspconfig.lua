@@ -102,22 +102,22 @@ return {
 					},
 				})
 			end,
-			-- ["bashls"] = function()
-			-- 	lspconfig["bashls"].setup({
-			-- 		capabilities = capabilities,
-			-- 		settings = {
-			-- 			Lua = {
-			-- 				-- make the language server recognize "vim" global
-			-- 				diagnostics = {
-			-- 					globals = { "vim" },
-			-- 				},
-			-- 				completion = {
-			-- 					callSnippet = "Replace",
-			-- 				},
-			-- 			},
-			-- 		},
-			-- 	})
-			-- end,
+			["clangd"] = function()
+				lspconfig["clangd"].setup({
+					capabilities = capabilities,
+					settings = {
+						Lua = {
+							-- make the language server recognize "vim" global
+							diagnostics = {
+								globals = { "vim" },
+							},
+							completion = {
+								callSnippet = "Replace",
+							},
+						},
+					},
+				})
+			end,
 		})
 	end,
 }
