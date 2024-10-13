@@ -22,6 +22,7 @@ You can use script
 git clone https://github.com/xiaowu-d3/nvim.git
 cd nvim
 chmod +x install.sh
+./install.sh
 ```
 
 ## Basic mappings
