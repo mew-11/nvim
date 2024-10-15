@@ -5,11 +5,6 @@ local map = vim.keymap.set
 map("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 map("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
-
--- increment/decrement numbers
-map("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
-map("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
-
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
 map("i", "<C-h>", "<Left>", { desc = "move left" })
