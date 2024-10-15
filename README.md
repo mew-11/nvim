@@ -2,7 +2,7 @@
 
 ```bash
 # if you use ubuntu => install neovim using snap (recommend), flatpak
-snap install nnvim --classic
+snap install nvim --classic
 echo 'export PATH=$PATH:/snap/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
