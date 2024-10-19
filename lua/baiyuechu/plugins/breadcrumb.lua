@@ -1,0 +1,86 @@
+return {
+	"utilyre/barbecue.nvim",
+	name = "barbecue",
+	version = "*",
+	dependencies = {
+		"SmiteshP/nvim-navic",
+		"nvim-tree/nvim-web-devicons",
+	},
+	lazy = false,
+	config = function()
+		local C = {
+			rosewater = "#f5e0dc",
+			flamingo = "#f2cdcd",
+			pink = "#f5c2e7",
+			mauve = "#cba6f7",
+			red = "#f38ba8",
+			maroon = "#eba0ac",
+			peach = "#fab387",
+			yellow = "#f9e2af",
+			green = "#a6e3a1",
+			teal = "#94e2d5",
+			sky = "#89dceb",
+			sapphire = "#74c7ec",
+			blue = "#89b4fa",
+			lavender = "#b4befe",
+			text = "#cdd6f4",
+			subtext1 = "#bac2de",
+			subtext0 = "#a6adc8",
+			overlay2 = "#9399b2",
+			overlay1 = "#7f849c",
+			overlay0 = "#6c7086",
+			surface2 = "#585b70",
+			surface1 = "#45475a",
+			surface0 = "#313244",
+			base = "#1e1e2e",
+			mantle = "#181825",
+			crust = "#11111b",
+		}
+		local dirname_color = C.overlay1 or C.text
+		local context_color = C.overlay1 or C.text
+		require("barbecue").setup({
+			symbols = {
+				separator = "  ",
+			},
+			theme = {
+				normal = { fg = C.text },
+
+				ellipsis = { fg = C.overlay1 },
+				separator = { fg = C.overlay1 },
+				modified = { fg = C.peach },
+
+				dirname = { fg = dirname_color },
+				basename = { fg = C.text },
+				context = { fg = context_color },
+
+				-- Same keys as navic
+				context_file = { fg = C.blue },
+				context_module = { fg = C.blue },
+				context_namespace = { fg = C.blue },
+				context_package = { fg = C.blue },
+				context_class = { fg = C.yellow },
+				context_method = { fg = C.blue },
+				context_property = { fg = C.green },
+				context_field = { fg = C.green },
+				context_constructor = { fg = C.blue },
+				context_enum = { fg = C.green },
+				context_interface = { fg = C.yellow },
+				context_function = { fg = C.blue },
+				context_variable = { fg = C.flamingo },
+				context_constant = { fg = C.peach },
+				context_string = { fg = C.green },
+				context_number = { fg = C.peach },
+				context_boolean = { fg = C.peach },
+				context_array = { fg = C.blue },
+				context_object = { fg = C.blue },
+				context_key = { fg = C.flamingo },
+				context_null = { fg = C.peach },
+				context_enum_member = { fg = C.red },
+				context_struct = { fg = C.blue },
+				context_event = { fg = C.blue },
+				context_operator = { fg = C.blue },
+				context_type_parameter = { fg = C.blue },
+			},
+		})
+	end,
+}

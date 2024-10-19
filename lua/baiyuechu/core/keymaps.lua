@@ -30,3 +30,5 @@ map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new
 map("n", "<A-h>", "<cmd>ToggleTerm direction=horizontal<CR>", { desc = "Open terminal horizontal" }) --  move current buffer to new tab
 map("n", "<A-v>", "<cmd>ToggleTerm direction=vertical size=49<CR>", { desc = "Open terminal vertical" }) --  move current buffer to new tab
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
+map("n", "<leader>/", "gcc", { desc = "Toggle Comment", remap = true })
+map("v", "<leader>/", "gc", { desc = "Toggle comment", remap = true })
